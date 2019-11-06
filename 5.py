@@ -87,6 +87,8 @@ def getTestData(TestSet,model_testSet,model,index):
 
 
 model=LoadModel()
+torch.save(model.cpu(),'LeNet_cpu.pkl')
+
 
 trainSet,testSet,model_testSet=LoadData()
 
